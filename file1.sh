@@ -17,3 +17,19 @@ case $input in
         *)echo "invalid"
 esac
 
+
+
+#!/bin/bash
+
+# Coordinates of the first point
+x1=1
+y1=2
+
+# Coordinates of the second point
+x2=3
+y2=4
+
+# Calculate the distance using the distance formula
+distance=$(echo "sqrt(($x2 - $x1)^2 + ($y2 - $y1)^2)" | bc)
+
+echo "Distance between ($x1, $y1) and ($x2, $y2) is: $distance"
